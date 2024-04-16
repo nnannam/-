@@ -1,0 +1,158 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+
+a {
+  color: #000;
+}
+
+.container {
+  margin: auto;
+  padding: 0 15px;
+  width: 1382px;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./AnyConv.com__Montserrat-Regular.woff2") format(".woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./AnyConv.com__Montserrat-Bold.woff2") format(".woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./AnyConv.com__Roboto-Medium.woff2") format(".woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  min-height: 85px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  font-size: 20px;
+}
+
+.block1 {
+  min-height: 900px;
+  background-image: url("./images/background.png");
+}
+.block1__text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 75px;
+  padding-top: 75px;
+  row-gap: 35px;
+  color: white;
+}
+.block1__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+}/*# sourceMappingURL=main.css.map */

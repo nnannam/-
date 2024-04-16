@@ -1,0 +1,15 @@
+.header{
+    min-height: 85px;
+    &__nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+    font-size: 20px;
+}

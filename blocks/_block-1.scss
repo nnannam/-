@@ -1,0 +1,17 @@
+.block1{
+    min-height: 900px;
+    background-image:url("./images/background.png");
+    &__text{
+        display: flex;
+        flex-direction: column;
+        padding-left: 75px;
+        padding-top: 75px;
+        row-gap: 35px;
+        color: white;
+    }
+    &__title{
+        font-family: $font-accent;
+        font-size: 70px;
+        font-weight: 500;
+    }
+}
