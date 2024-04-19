@@ -2,8 +2,13 @@
 @import './base/reset';
 @import './base/vars';
 @import './base/base';
-@import './fonts/fonts.scss';
-
+@import './base/mixins';
 //blocks
 @import './blocks/header';
+@import './blocks/nav-icon';
 @import './blocks/block-1';
+@import './blocks/block-2';
+@import './blocks/block-3';
+@import './blocks/block-4';
+@import './blocks/block-5';
+@import './blocks/footer';

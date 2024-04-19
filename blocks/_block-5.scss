@@ -1,0 +1,85 @@
+.grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 21.5vw 21.5vw 21.5vw 21.5vw;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 1vw;
+    &__item{
+        @include small-text (24, 18);
+        height: 200px;
+        background-color: $color;
+        border-radius: 30px;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item3{
+        @include small-text (24,18);
+        grid-column: span 2;
+        background-color: $color;
+        border-radius: 30px;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.block5{
+    @include mediaTablet{
+        display: none;
+    }
+    margin-top: 6vw;
+    &__title{
+        @include large-text;
+        margin-left: 75px;
+        margin-bottom: 100px;
+        display: inline-block;
+    }
+    &__title:after{
+        content: "";
+        display: block;
+        margin-top: 20px;
+        color: $underline-color;
+        border: 7px solid $underline-color;
+    }
+}
+.block5-tablet{
+    display: none;
+    @include mediaTablet{
+        display: block;
+    }
+    margin-top: 6vw;
+    &__title{
+        @include large-text(70,35);
+        margin-left: 5vw;
+        margin-bottom: 6vw;
+        display: inline-block;
+    }
+    &__title:after{
+        content: "";
+        display: block;
+        margin-top: 20px;
+        color: $underline-color;
+        border: 0.5vw solid $underline-color;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    &__list-item{
+        display: flex;
+        column-gap: 30px;
+    }
+    &__text{
+        background-color: $color;
+        border-radius: 20px;
+        @include small-text;
+        padding: 40px;
+        width: 85vw
+    }
+    &__img{
+        width: 7vw;
+    }
+}

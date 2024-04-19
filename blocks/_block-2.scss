@@ -1,0 +1,33 @@
+.block2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 6vw;
+    column-gap: 7vw;
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        row-gap: 5.5vw;
+        margin-left: 5vw;
+    }
+    &__title{
+        @include large-text(70,35);
+    }
+    &__title:after{
+        content: "";
+        display: block;
+        margin-top: 1.4vw;
+        color: $underline-color;
+        border: 0.5vw solid $underline-color;
+    }
+    &__description{
+        @include small-text;
+    }
+    &__description_bold{
+        font-weight: bold;
+    }
+    &__image{
+        width: 50%;
+    }
+}

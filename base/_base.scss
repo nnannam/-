@@ -1,6 +1,5 @@
 body{
     font-family: $font-main;
-    font-size: 24px;
 }
 a{
     color: #000;
@@ -8,5 +7,9 @@ a{
 .container{
     margin: auto;
     padding: 0 15px;
-    width: 1382px;
+    max-width: 1382px;
+}
+
+.no-scroll{
+    overflow-y: hidden;
 }
