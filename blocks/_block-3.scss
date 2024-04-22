@@ -2,6 +2,9 @@
     display: flex;
     margin-top: 6vw;
     column-gap: 7vw;
+    @include mediaPhone{
+        flex-direction: column-reverse;
+    }
     &__text{
         display: flex;
         flex-direction: column;

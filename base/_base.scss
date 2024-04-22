@@ -1,5 +1,8 @@
 body{
     font-family: $font-main;
+    @include mediaPhone{
+        width: 200px;
+    }
 }
 a{
     color: #000;

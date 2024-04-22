@@ -5,6 +5,9 @@
     @include mediaTablet{
         min-height: 700px;
     }
+    @include mediaPhone{
+        min-height: 600px;
+    }
     &__text{
         display: flex;
         flex-direction: column;
