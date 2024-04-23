@@ -17,11 +17,30 @@
         row-gap: 35px;
         color: white;
         max-width: 870px;
+        @include mediaPhone{
+            row-gap: 5vw;
+        }
     }
     &__title{
         @include large-text (70, 55);
+        @include mediaPhone{
+            @include large-text (40, 38);
+            word-wrap: break-word;
+        }
+        @media screen and (max-width: 409px) {
+            @include large-text(38,32)
+        }
+        @media screen and (max-width: 355px) {
+            @include large-text(32,30)
+        }
+        @media screen and (max-width: 335px) {
+            @include large-text(30,25)
+        }
     }
     &__description{
         @include small-text;
+        @include mediaPhone{
+            @include small-text(24,14);
+        }
     }
 }

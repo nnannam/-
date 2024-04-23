@@ -11,14 +11,14 @@
         weight: 400;
       }
 }
+
 @mixin mediaTablet {
     @media screen and (max-width: $tablet){
-        @content
+        @content;
     }
 }
-
 @mixin mediaPhone {
     @media screen and (max-width: $phone){
-        @content
+        @content;
     }
 }

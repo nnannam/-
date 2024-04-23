@@ -4,6 +4,8 @@
     column-gap: 7vw;
     @include mediaPhone{
         flex-direction: column-reverse;
+        row-gap: 8vw;
+        margin-top: 15vw;
     }
     &__text{
         display: flex;
@@ -14,6 +16,9 @@
     }
     &__title{
         width: 22vw;
+        @include mediaPhone{
+            width: 40vw;
+        }
     }
     &__title:after{
         content: "";
@@ -21,14 +26,23 @@
         margin-top: 1.4vw;
         color: $underline-color;
         border: 0.5vw solid $underline-color;
+        @include mediaPhone{
+            border: 0.8vw solid;
+        }
     }
     &__description{
         @include small-text;
+        @include mediaPhone{
+            @include small-text(24,14);
+        }
     }
     &__description_bold{
         font-weight: bold;
     }
     &__image{
         width: 50%;
+        @include mediaPhone{
+            width: 100%;
+        }
     }
 }

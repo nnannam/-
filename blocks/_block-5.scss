@@ -55,6 +55,9 @@
         margin-left: 5vw;
         margin-bottom: 6vw;
         display: inline-block;
+        @include mediaPhone{
+            @include large-text(40,32);
+        }
     }
     &__title:after{
         content: "";
@@ -62,11 +65,19 @@
         margin-top: 20px;
         color: $underline-color;
         border: 0.5vw solid $underline-color;
+        @include mediaPhone{
+            border: 0.8vw solid;
+            margin-top: 2vw;
+            margin-bottom: 8vw;
+        }
     }
     &__list{
         display: flex;
         flex-direction: column;
         row-gap: 15px;
+        @include mediaPhone{
+            row-gap: 2vw;
+        }
     }
     &__list-item{
         display: flex;
@@ -77,9 +88,16 @@
         border-radius: 20px;
         @include small-text;
         padding: 40px;
-        width: 85vw
+        width: 85vw;
+        @include mediaPhone{
+            padding: 5vw;
+            @include small-text(24,14);
+        }
     }
     &__img{
         width: 7vw;
+        @include mediaPhone{
+            width: 9vw;
+        }
     }
 }
