@@ -1,0 +1,60 @@
+.block-2-1{
+    margin-top: 6vw;
+    @include mediaTablet{
+        display: block;
+    }
+    &__title{
+        @include large-text(70,35);
+        margin-left: 5vw;
+        margin-bottom: 6vw;
+        display: inline-block;
+        @include mediaPhone{
+            @include large-text(40,32);
+        }
+    }
+    &__title:after{
+        content: "";
+        display: block;
+        margin-top: 20px;
+        color: $underline-color;
+        border: 0.5vw solid $underline-color;
+        @include mediaPhone{
+            border: 0.8vw solid;
+            margin-top: 2vw;
+            margin-bottom: 8vw;
+        }
+    }
+    &__description{
+        @include small-text(24,14);
+        margin-bottom: 6vw;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        @include mediaPhone{
+            row-gap: 2vw;
+        }
+    }
+    &__list-item{
+        display: flex;
+        column-gap: 30px;
+    }
+    &__text{
+        background-color: $color;
+        border-radius: 20px;
+        @include small-text;
+        padding: 40px;
+        width: 85vw;
+        @include mediaPhone{
+            padding: 5vw;
+            @include small-text(24,14);
+        }
+    }
+    &__img{
+        width: 7vw;
+        @include mediaPhone{
+            width: 9vw;
+        }
+    }
+}

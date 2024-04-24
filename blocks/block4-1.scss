@@ -1,0 +1,27 @@
+.block-4-1{
+    margin-top: 6vw;
+    @include mediaTablet{
+        display: block;
+    }
+    &__title{
+        @include large-text(70,35);
+        margin-left: 5vw;
+        margin-bottom: 6vw;
+        display: inline-block;
+        @include mediaPhone{
+            @include large-text(40,32);
+        }
+    }
+    &__title:after{
+        content: "";
+        display: block;
+        margin-top: 20px;
+        color: $underline-color;
+        border: 0.5vw solid $underline-color;
+        @include mediaPhone{
+            border: 0.8vw solid;
+            margin-top: 2vw;
+            margin-bottom: 8vw;
+        }
+    }
+}
