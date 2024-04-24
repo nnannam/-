@@ -727,11 +727,6 @@ a {
 .block-2-1 {
   margin-top: 6vw;
 }
-@media screen and (max-width: 999px) {
-  .block-2-1 {
-    display: block;
-  }
-}
 .block-2-1__title {
   font-size: clamp(35px, 4.8611111111vw, 70px);
   font-weight: 500;
@@ -813,11 +808,6 @@ a {
 .block-4-1 {
   margin-top: 6vw;
 }
-@media screen and (max-width: 999px) {
-  .block-4-1 {
-    display: block;
-  }
-}
 .block-4-1__title {
   font-size: clamp(35px, 4.8611111111vw, 70px);
   font-weight: 500;
@@ -848,4 +838,76 @@ a {
     margin-top: 2vw;
     margin-bottom: 8vw;
   }
+}
+
+.block-5-1 {
+  margin-top: 6vw;
+  margin-bottom: 6vw;
+}
+.block-5-1__title {
+  font-size: clamp(35px, 4.8611111111vw, 70px);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  margin-left: 5vw;
+  margin-bottom: 6vw;
+  display: inline-block;
+}
+@media screen and (max-width: 599px) {
+  .block-5-1__title {
+    font-size: clamp(32px, 2.7777777778vw, 40px);
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+  }
+}
+.block-5-1__title:after {
+  content: "";
+  display: block;
+  margin-top: 20px;
+  color: #D7E1E9;
+  border: 0.5vw solid #D7E1E9;
+}
+@media screen and (max-width: 599px) {
+  .block-5-1__title:after {
+    border: 0.8vw solid;
+    margin-top: 2vw;
+    margin-bottom: 8vw;
+  }
+}
+.block-5-1__contacts {
+  display: flex;
+  margin-left: 5vw;
+  -moz-column-gap: 10vw;
+       column-gap: 10vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(14px, 1.6666666667vw, 24px);
+  font-weight: 400;
+}
+@media screen and (max-width: 599px) {
+  .block-5-1__contacts {
+    margin-left: 0;
+    flex-direction: column;
+    row-gap: 7vw;
+  }
+}
+.block-5-1__info, .block-5-1__people {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4vw;
+  max-width: 37vw;
+}
+@media screen and (max-width: 599px) {
+  .block-5-1__info, .block-5-1__people {
+    max-width: 100%;
+    row-gap: 7vw;
+  }
+}
+.block-5-1__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+}
+.block-5-1__bold {
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

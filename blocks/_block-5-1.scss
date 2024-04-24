@@ -1,5 +1,6 @@
-.block-2-1{
+.block-5-1{
     margin-top: 6vw;
+    margin-bottom: 6vw;
     &__title{
         @include large-text(70,35);
         margin-left: 5vw;
@@ -21,37 +22,33 @@
             margin-bottom: 8vw;
         }
     }
-    &__description{
+    &__contacts{
+        display: flex;
+        margin-left: 5vw;
+        column-gap: 10vw;
         @include small-text(24,14);
-        margin-bottom: 6vw;
+        @include mediaPhone{
+            margin-left: 0;
+            flex-direction: column;
+            row-gap: 7vw;
+        }
     }
-    &__list{
+    &__info, &__people{
         display: flex;
         flex-direction: column;
-        row-gap: 15px;
+        row-gap: 4vw;
+        max-width: 37vw;
         @include mediaPhone{
-            row-gap: 2vw;
+            max-width: 100%;
+            row-gap: 7vw;
         }
     }
-    &__list-item{
+    &__item{
         display: flex;
-        column-gap: 30px;
+        flex-direction: column;
+        row-gap: 2vw;
     }
-    &__text{
-        background-color: $color;
-        border-radius: 20px;
-        @include small-text;
-        padding: 40px;
-        width: 85vw;
-        @include mediaPhone{
-            padding: 5vw;
-            @include small-text(24,14);
-        }
-    }
-    &__img{
-        width: 7vw;
-        @include mediaPhone{
-            width: 9vw;
-        }
+    &__bold{
+        font-weight: 700;
     }
 }

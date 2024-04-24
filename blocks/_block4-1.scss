@@ -1,8 +1,5 @@
 .block-4-1{
     margin-top: 6vw;
-    @include mediaTablet{
-        display: block;
-    }
     &__title{
         @include large-text(70,35);
         margin-left: 5vw;
