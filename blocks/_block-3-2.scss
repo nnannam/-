@@ -42,10 +42,27 @@
     }
     &__paragraph{
         margin-top: 6vw;
-        @include small-text(24.14);
+        @include small-text(24,14);
         @include mediaPhone{
             margin-bottom: 8vw;
             margin-top: 8vw;
         }
     }
+    &__par1{
+        margin-top: 6vw;
+        @include small-text(24,14);
+        @include mediaPhone{
+            margin-bottom: 8vw;
+            margin-top: 8vw;
+        }
+    }
+    &__par2{
+        margin-top: 3vw;
+        @include small-text(24,14);
+        @include mediaPhone{
+            margin-bottom: 8vw;
+            margin-top: 8vw;
+        }
+    }
+    
 }

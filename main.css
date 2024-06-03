@@ -1006,11 +1006,35 @@ a {
 .block-3-2__paragraph {
   margin-top: 6vw;
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(16px, 1.6763888889vw, 24.14px);
+  font-size: clamp(14px, 1.6666666667vw, 24px);
   font-weight: 400;
 }
 @media screen and (max-width: 599px) {
   .block-3-2__paragraph {
+    margin-bottom: 8vw;
+    margin-top: 8vw;
+  }
+}
+.block-3-2__par1 {
+  margin-top: 6vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(14px, 1.6666666667vw, 24px);
+  font-weight: 400;
+}
+@media screen and (max-width: 599px) {
+  .block-3-2__par1 {
+    margin-bottom: 8vw;
+    margin-top: 8vw;
+  }
+}
+.block-3-2__par2 {
+  margin-top: 3vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(14px, 1.6666666667vw, 24px);
+  font-weight: 400;
+}
+@media screen and (max-width: 599px) {
+  .block-3-2__par2 {
     margin-bottom: 8vw;
     margin-top: 8vw;
   }
